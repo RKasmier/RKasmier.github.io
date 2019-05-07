@@ -9,7 +9,8 @@ window.onload=function(){
 
 x=canv.width/2;
 y=canv.height/2;
-xv=yv=0;
+xv=0;
+yv=0;
 
 xv = 5;
 function main(){
@@ -17,7 +18,7 @@ function main(){
    ctx.fillRect(0,0, canv.width, canv.height);
   ctx.fillStyle = "white";
   
-  ctx.fillEllipse(x, y, 25, 25);
+  ctx.fillRect(x, y, 25, 25);
    
   if(x>canv.width-25 || x<25){
      xv *= -1;
