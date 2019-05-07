@@ -8,6 +8,7 @@ window.onload=function(){
 }
 
 function main(){
-   alert("works");
+  ctx.fillStyle = "black";
+   ctx.fillRect(0,0, canv.width, canv.height);
   
 }
