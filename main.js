@@ -7,25 +7,20 @@ window.onload=function(){
   
 }
 
-x=canv.width/2;
-y=canv.height/2;
-xv=0;
-yv=0;
 
-xv = 5;
 function main(){
-  ctx.fillStyle = "black";
-   ctx.fillRect(0,0, canv.width, canv.height);
   ctx.fillStyle = "white";
+   ctx.fillRect(0,0, canv.width, canv.height);
+  ctx.fillStyle = "black";
   
-  ctx.fillRect(x, y, 25, 25);
+  ctx.fillRect(100, 100, 200, 200);
    
-  if(x>canv.width-25 || x<25){
+  /*if(x>canv.width-25 || x<25){
      xv *= -1;
      }
    if(y>canv.height || y<25){
      yv *= -1;
    }
   x+=xv;
-  y+=yv;
+  y+=yv;*/
 }
