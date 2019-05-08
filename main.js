@@ -1,3 +1,5 @@
+var x = 50;
+var y = 100;
 
 window.onload=function(){
   canv = document.getElementById("canvas");
@@ -13,7 +15,7 @@ function main(){
    ctx.fillRect(0,0, canv.width, canv.height);
   ctx.fillStyle = "black";
   
-  ctx.fillRect(100, 100, 200, 200);
+  ctx.fillRect(x, y, 50, 50);
    
   /*if(x>canv.width-25 || x<25){
      xv *= -1;
@@ -23,4 +25,5 @@ function main(){
    }
   x+=xv;
   y+=yv;*/
+  x+=2;
 }
