@@ -19,11 +19,9 @@ function main(){
   
   ctx.fillRect(x, y, 50, 50);
    
-  if(x>canv.width-25 || x<25){
+  if(x>canv.width-50 || x<50){
      vx *= -1;
-     }
-   if(y>canv.height || y<25){
-     vy *= -1;
-   }
+  }
+  
   x+=vx;
 }
