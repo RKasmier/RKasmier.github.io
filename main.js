@@ -2,11 +2,13 @@ var x = 50;
 var y = 100;
 var vx = 2;
 var vy = 0;
+var posX;
+var posY;
 
 window.onload=function(){
   canv = document.getElementById("canvas");
   ctx = canv.getContext("2d");
-  
+  document.addKeyListener("mousedown", mousePressed);
   setInterval(main, 1000/60);
   
 }
@@ -24,4 +26,11 @@ function main(){
   }
   
   x+=vx;
+}
+
+
+function mousePressed(event){
+      posX = event.clientX;
+      posY = event.clientY;
+      vx *= -1;
 }
