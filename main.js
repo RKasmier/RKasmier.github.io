@@ -33,4 +33,6 @@ function mousePressed(event){
       posX = event.clientX;
       posY = event.clientY;
       vx *= -1;
+  
+      alert(posX + ", " + posY);
 }
